@@ -1,0 +1,33 @@
+<section class="hero" style="background-image: url('images/hero_1_a.jpg');">
+  <div class="container">
+    <div class="row justify-content-center align-items-center" style="min-height: 80vh;">
+      <div class="col-md-6">
+        <div class="card p-5 shadow-lg rounded-4">
+          <h2 class="text-center mb-4">Login</h2>
+          <form id="loginForm">
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group mb-4">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block py-2">Login</button>
+            <p class="text-center mt-3">
+              Don’t have an account?
+              <a href="#register" class="text-primary">Register</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $("#loginForm").on("submit", function(e) {
+    e.preventDefault();
+    alert("Login functionality will be implemented later.");
+  });
+</script>
