@@ -1,0 +1,41 @@
+<section class="hero" style="background-image: url('images/hero_1_b.jpg');">
+  <div class="container">
+    <div class="row justify-content-center align-items-center" style="min-height: 80vh;">
+      <div class="col-md-6">
+        <div class="card p-5 shadow-lg rounded-4">
+          <h2 class="text-center mb-4">Register</h2>
+          <form id="registerForm">
+            <div class="form-group mb-3">
+              <label for="name">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group mb-3">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group mb-4">
+              <label for="confirmPassword">Confirm Password</label>
+              <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block py-2">Create Account</button>
+            <p class="text-center mt-3">
+              Already have an account?
+              <a href="#login" class="text-primary">Login</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $("#registerForm").on("submit", function(e) {
+    e.preventDefault();
+    alert("Registration functionality will be implemented later.");
+  });
+</script>
