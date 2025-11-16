@@ -1,4 +1,5 @@
 <?php
+
 class Database {
   private static $host = 'localhost';
   private static $dbName = 'car_rental';
